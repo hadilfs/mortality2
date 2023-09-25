@@ -17,7 +17,7 @@ elif selectedchart == "Scatter Plot":
         st.subheader("Using a Scatter plot")
         show_scatterplot=st.button("Click to Show Scatter Plot")
         if show_scatterplot:
-            df = pd.read_csv("https://raw.githubusercontent.com/hadilfs/mortality2/main/lebanon_mortality_2.csvv")
+            df = pd.read_csv("https://raw.githubusercontent.com/hadilfs/mortality2/main/lebanon_mortality_2.csv")
             fig1 = px.scatter(df, x="Year", y="Deaths",color="Deaths",color_continuous_scale="Reds")
             st.plotly_chart(fig1)
             st.caption("***This scatter plot shows the mortality rate in lebanon from 1960 to 2021***")
